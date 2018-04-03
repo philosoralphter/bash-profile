@@ -1,0 +1,42 @@
+###########
+#Imports
+########
+
+#e.g.: ~/dropbox/env-settings/bash-tools/
+IMPORT_DIR=
+
+
+#Load Git Repo Data in Prompt
+. $IMPORT_DIR/git-prompt-setup.sh
+. $IMPORT_DIR/git-aliases.sh
+source $IMPORT_DIRprompt-command.sh
+
+#Util functions
+source $IMPORT_DIR/util-functions.sh
+
+#Aliases
+source $IMPORT_DIR/aliases.sh
+
+#Work
+for f in $IMPORT_DIR/../private/work/*.sh; do source $f; done
+
+#AWS and other keys
+source $IMPORT_DIR/../private/keys.sh
+
+#Chrome cli
+source  $IMPORT_DIR/CLIs.sh
+
+#Setup Docker
+#source $IMPORT_DIR/docker-setup
+
+#GoLang
+source $IMPORT_DIR/golang.sh
+
+#Editors
+source $IMPORT_DIR/editor-settings.sh
+
+#Shell Utils
+source $IMPORT_DIR/shell-utils.sh
+
+#AWS
+source $IMPORT_DIR/shell-utils.sh
