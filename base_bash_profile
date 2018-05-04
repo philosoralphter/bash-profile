@@ -1,10 +1,11 @@
+
 ###########
 #Imports
 ########
 
 #e.g.: ~/dropbox/env-settings/bash-tools/
 IMPORT_DIR=
-
+PRIVATE_DIR=
 
 #Load Git Repo Data in Prompt
 . $IMPORT_DIR/git-prompt-setup.sh
@@ -16,12 +17,6 @@ source $IMPORT_DIR/util-functions.sh
 
 #Aliases
 source $IMPORT_DIR/aliases.sh
-
-#Work
-for f in $IMPORT_DIR/../private/work/*.sh; do source $f; done
-
-#AWS and other keys
-source $IMPORT_DIR/../private/keys.sh
 
 #Chrome cli
 source  $IMPORT_DIR/CLIs.sh
@@ -40,3 +35,18 @@ source $IMPORT_DIR/shell-utils.sh
 
 #AWS
 source $IMPORT_DIR/shell-utils.sh
+
+
+####Private
+if [ -e $IMPORT_DIR/../private ]
+then
+        #AWS and other keys
+        source $PRIVATE_DIR/src-this/keys.sh
+
+        #Work
+        for f in $PRIVATE_DIR/work/*.sh; do source $f; done
+
+        #etc: directory change aliases, Keys...
+        for f in $PRIVATE_DIR/src-this/*.sh; do source $f; done
+fi
+
