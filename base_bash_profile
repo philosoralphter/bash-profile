@@ -9,7 +9,7 @@ IMPORT_DIR=
 #Load Git Repo Data in Prompt
 . $IMPORT_DIR/git-prompt-setup.sh
 . $IMPORT_DIR/git-aliases.sh
-source $IMPORT_DIRprompt-command.sh
+source $IMPORT_DIR/prompt-command.sh
 
 #Util functions
 source $IMPORT_DIR/util-functions.sh
