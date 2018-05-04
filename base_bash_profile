@@ -1,11 +1,25 @@
+#####
+#CONFIG
+#for this machine only
+####
 
-###########
-#Imports
-########
-
-#e.g.: ~/dropbox/env-settings/bash-tools/
+#Bash-profile Repo Location
+# e.g.: ~/dropbox/env-settings/bash-profile/src-this
+# and ~/dropbox/env-settings/bash-profile/private/src-this
 IMPORT_DIR=
 PRIVATE_DIR=
+
+#ENV VARS
+#JAVA_HOME=
+#export GOPATH=
+
+
+
+
+##########
+#Imports
+#Common Utils
+##########
 
 #Load Git Repo Data in Prompt
 . $IMPORT_DIR/git-prompt-setup.sh
