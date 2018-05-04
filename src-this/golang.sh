@@ -1,7 +1,6 @@
 ##############
 #GOlang
 #############
-export GOPATH=$HOME/go
-export GOROOT=/usr/local/Cellar/go/1.9.2/libexec
+# export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
