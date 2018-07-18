@@ -50,6 +50,9 @@ source $IMPORT_DIR/shell-utils.sh
 #AWS
 source $IMPORT_DIR/shell-utils.sh
 
+#GCLOUD
+source $IMPORT_DIR/google-cloud-sdk.sh
+
 
 ####Private
 if [ -e $IMPORT_DIR/../private ]
