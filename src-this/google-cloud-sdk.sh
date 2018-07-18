@@ -4,4 +4,4 @@
 
 #completion
 source /Users/rsamuel/MEGAsync/env/google-cloud-sdk/completion.bash.inc
-soruce /Users/rsamuel/MEGAsync/env/google-cloud-sdk/path.bash.inc
+source /Users/rsamuel/MEGAsync/env/google-cloud-sdk/path.bash.inc
