@@ -23,9 +23,9 @@ fi
 
 ##add below aliases to git completion
 ##!!! not working
-__git_complete gco __git_main
-__git_complete gd __git_main
-__git_complete gcob __git_main
+__git_complete gco __git_heads
+__git_complete gd __git_heads
+__git_complete gcob __git_heads
 
 
 
