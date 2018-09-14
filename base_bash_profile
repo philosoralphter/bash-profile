@@ -44,9 +44,6 @@ source $IMPORT_DIR/golang.sh
 #Editors
 source $IMPORT_DIR/editor-settings.sh
 
-#AWS
-source $IMPORT_DIR/shell-utils.sh
-
 #GCLOUD
 source $IMPORT_DIR/google-cloud-sdk.sh
 
