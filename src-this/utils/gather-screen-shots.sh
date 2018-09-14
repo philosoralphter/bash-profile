@@ -8,4 +8,6 @@
 #feb 1 2013
 
 
-find /Users/rsamuel/Desktop/Screen\ Shot\ * -exec mv {} /Users/rsamuel/Desktop/Screen\ Shots/ \;
+function gather-screenshots () {
+    find ~/Desktop/Screen\ Shot\ * -exec mv {} ~/Desktop/Screen\ Shots/ \;
+}
