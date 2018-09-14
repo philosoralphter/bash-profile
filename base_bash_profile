@@ -26,8 +26,8 @@ PRIVATE_DIR=
 . $IMPORT_DIR/git-aliases.sh
 source $IMPORT_DIR/prompt-command.sh
 
-#Util functions
-source $IMPORT_DIR/util-functions.sh
+#Utils
+source $IMPORT_DIR/utils/*.sh
 
 #Aliases
 source $IMPORT_DIR/aliases.sh
@@ -43,9 +43,6 @@ source $IMPORT_DIR/golang.sh
 
 #Editors
 source $IMPORT_DIR/editor-settings.sh
-
-#Shell Utils
-source $IMPORT_DIR/shell-utils.sh
 
 #AWS
 source $IMPORT_DIR/shell-utils.sh
