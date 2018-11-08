@@ -9,5 +9,7 @@
 
 
 function gather-screenshots () {
-    find ~/Desktop/Screen\ Shot\ * -exec mv {} ~/Desktop/Screen\ Shots/ \;
+    screenshots="~/Desktop/Screen Shot"*
+    mkdir -p ~/.Desktop/Screen Shots
+    find "$screenshots" -exec mv {} ~/Desktop/Screen\ Shots/ \;
 }
