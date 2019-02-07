@@ -9,7 +9,7 @@
 
 
 function gather-screenshots () {
-    screenshots="~/Desktop/Screen Shot"*
-    mkdir -p ~/.Desktop/Screen Shots
-    find "$screenshots" -exec mv {} ~/Desktop/Screen\ Shots/ \;
+    screenshots=$(echo Desktop/Screen\ Shot\ *);
+    mkdir -p ~/.Desktop/Screen Shots;
+    find $HOME/Desktop -maxdepth 1 -name "Screen Shot *" -exec mv {} ~/Desktop/Screen\ Shots/ \;;
 }
