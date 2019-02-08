@@ -20,12 +20,3 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 #TODO: CHECK OF FILES NOT LOADED AND MENTION IT IN TERMINAL
-
-##add below aliases to git completion
-##!!! not working
-__git_complete gco _git_checkout
-__git_complete gd _git_diff
-# __git_complete gcob __git_heads
-
-
-
