@@ -4,3 +4,6 @@ defaults write -g ApplePressAndHoldEnabled -bool false #rather than iOS style po
 
 # Make text slectable in quick look
 defaults write com.apple.finder QLEnableTextSelection -bool true;
+
+#Stop back and forward navigation with two finger scroll in chrome
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
