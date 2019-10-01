@@ -27,7 +27,9 @@ PRIVATE_DIR=
 source $IMPORT_DIR/prompt-command.sh
 
 #Utils
-source $IMPORT_DIR/utils/*.sh
+for file in $IMPORT_DIR/utils/*.sh; do
+  source $file
+done
 
 #Aliases
 source $IMPORT_DIR/aliases.sh
