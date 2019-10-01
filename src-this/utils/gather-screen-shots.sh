@@ -1,4 +1,3 @@
-#!/bin/bash
 
 #This Script takes screen shots from desktop and puts them in the screen shots folder on the desktop
 #
