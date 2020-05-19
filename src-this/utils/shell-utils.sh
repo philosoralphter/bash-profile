@@ -6,7 +6,7 @@
 #PROMPTS
 #
 #git-free prompt:
-export PS1="\n\[\e[0;36m\]\D{%a %d %b} \A\n\[\e[0;35m\]\H: \w\n\[\e[0;35m\]\u !\!__\[\e[0;36m\]\$ \[\e[m\]"
+# export PS1="\n\[\e[0;36m\]\D{%a %d %b} \A\n\[\e[0;35m\]\H: \w\n\[\e[0;35m\]\u !\!__\[\e[0;36m\]\$ \[\e[m\]"
 
 ############
 

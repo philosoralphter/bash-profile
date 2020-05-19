@@ -19,4 +19,11 @@ if [ -f ~/.git-completion.bash ]; then
 	source ~/.git-completion.bash
 fi
 
-#TODO: CHECK OF FILES NOT LOADED AND MENTION IT IN TERMINAL
+
+##add below aliases to git completion
+__git_complete gco _git_checkout
+__git_complete gd _git_diff
+__git_complete gcob _git_checkout
+
+#for homebrew's completion
+# [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
