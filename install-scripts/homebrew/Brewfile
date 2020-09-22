@@ -1,0 +1,6 @@
+brew "git"
+brew "git-lfs"
+
+brew "awscli"
+
+brew "jq"
