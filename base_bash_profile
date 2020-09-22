@@ -7,14 +7,7 @@
 # e.g.: ~/dropbox/env-settings/bash-profile/src-this
 # and ~/dropbox/env-settings/bash-profile/private/src-this
 IMPORT_DIR=
-PRIVATE_DIR=
-
-#ENV VARS
-#JAVA_HOME=
-#export GOPATH=
-
-
-
+PRIVATE_DIR=$IMPORT_DIR/../private
 
 ##########
 #Imports
@@ -26,32 +19,19 @@ PRIVATE_DIR=
 . $IMPORT_DIR/git-aliases.sh
 source $IMPORT_DIR/prompt-command.sh
 
-#Utils
-for file in $IMPORT_DIR/utils/*.sh; do
-  source $file
-done
+####SOURCE SRC-THIS
+if [ -e $IMPORT_DIR ]; then
+    for f in $IMPORT_DIR/*.sh; do source $f; done
 
-#Aliases
-source $IMPORT_DIR/aliases.sh
-
-#Chrome cli
-source  $IMPORT_DIR/CLIs.sh
-
-#Setup Docker
-#source $IMPORT_DIR/docker-setup
-
-#GoLang
-source $IMPORT_DIR/golang.sh
-
-#Editors
-source $IMPORT_DIR/editor-settings.sh
-
-#GCLOUD
-source $IMPORT_DIR/google-cloud-sdk.sh
+    #Utils
+    for file in $IMPORT_DIR/utils/*.sh; do
+      source $file
+    done
+fi
 
 
 ####Private
-if [ -e $IMPORT_DIR/../private ]
+if [ -e $PRIVATE_DIR ]
 then
         #AWS and other keys
         source $PRIVATE_DIR/src-this/keys.sh

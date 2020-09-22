@@ -11,3 +11,4 @@ echo "[alias]
 [color]
         ui = true
         diff = auto" >> ~/.gitconfig
+ 
