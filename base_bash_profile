@@ -43,3 +43,5 @@ then
         for f in $PRIVATE_DIR/src-this/*.sh; do source $f; done
 fi
 
+#Anytime I want to preempt something or wrap it in my own version, I put that script in here:
+PATH=/usr/local/bin/preempt:$PATH
