@@ -8,3 +8,4 @@ alias hist="git hist" # own git alias for a formatted git log
 alias gpr="git pull --rebase"
 alias gco="git checkout"
 alias gcob="git checkout -b"
+alias gpb="git push -u origin HEAD"
