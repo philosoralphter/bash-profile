@@ -4,3 +4,5 @@ brew "git-lfs"
 brew "awscli"
 
 brew "jq"
+
+brew "iterm"
