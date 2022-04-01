@@ -11,3 +11,13 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
 # Keyboard key repeat settings
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+
+
+#Hot Corners
+defaults write com.apple.dock wvous-tl-corner -int 2 # Top left corner shows mission control
+defaults write com.apple.dock wvous-tr-corner -int 3 # Top Right Corner shows application windows
+defaults write com.apple.dock wvous-bl-corner -int 4 # Bottom left corner shows Desktop
+# defaults write com.apple.dock wvous-tl-corner -int 2 # Bottom Right not used
+
+#Set Desktop Pictures
+sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '~/MEGA/env/Desktop Photos'"; &&  killall Dock;
