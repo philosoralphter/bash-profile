@@ -5,4 +5,7 @@ brew "awscli"
 
 brew "jq"
 
-brew "iterm"
+cask "iterm2"
+cask "alfred"
+cask "istat-menus"
+cask "docker"
