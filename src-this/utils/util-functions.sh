@@ -31,5 +31,5 @@ function killport
 # uniqs and truncates output
 function hg
 {
-    history | grep $1 | sort -u -t \t -k 2,2 | sort | tail -n50
+    history | grep cp | sort -r -t \t -k2 | uniq -f 1 | sort | tail -n50
 }
