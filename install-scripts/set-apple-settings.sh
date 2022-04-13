@@ -20,4 +20,7 @@ defaults write com.apple.dock wvous-bl-corner -int 4 # Bottom left corner shows 
 # defaults write com.apple.dock wvous-tl-corner -int 2 # Bottom Right not used
 
 #Set Desktop Pictures
-sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '~/MEGA/env/Desktop Photos'"; &&  killall Dock;
+sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '~/MEGA/env/Desktop Photos'" &&  killall Dock;
+
+# make bash default shell
+chsh -s /bin/bash
